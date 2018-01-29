@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing2.css"/>
+		<script src="js/jsonp.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/xiangqing2.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
+			#ppp1{
+				
+				float: left;
+				width: 300px;
+				height: 60px;
+				background: rgba(0,255,50,0.7);
+				color: white;
+				text-align: center;
+				line-height: 60px;
+				cursor: pointer;
+			}
+			#ppp22{
+				cursor: pointer;
+				float: left;
+				width: 300px;
+				height: 60px;
+				background: black;
+				color: white;
+				text-align: center;
+				line-height: 60px;
+			}
+			.inp{
+				width: 480px;
+				height: 50px;
+				margin: 40px 0 0 60px;
+				
+			}
+			#use{
+				width: 480px;
+				height: 50px;
+				margin: 50px 0 0 60px;
+				
+			}
+			.cle{
+				display: block;
+				content: '';
+				clear: both;
+			}
+			#xxk{position: relative;
+				width: 600px;
+				background: white;
+				height: 500px;
+			}
+			#xxk2{position: relative;
+				width: 600px;
+				background: white;
+				height: 500px;
+				
+			}
+			#dls{font-size: 25px;
+				color: cadetblue;
+				height: 40px;
+				position: absolute;
+				right: 130px;
+				top: 150px;
+			}
+			#dls2{
+				height: 40px;
+				position: absolute;
+				right: 80px;
+				top: 152px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+			#dlst{
+				font-size: 25px;
+				color: cadetblue;
+				height: 40px;
+				position: absolute;
+				right: 130px;
+				top: 255px;
+			}
+			#dls2t{
+				cursor: pointer;
+				height: 40px;
+				position: absolute;
+				right: 80px;
+				font-size: 16px;
+				top: 257px;
+			}
+			#ppp2{cursor: pointer;
+				background: mediumslateblue;
+				width: 480px;
+				height: 60px;
+				margin: 20px 0 0 60px;
+				text-align: center;
+				line-height: 60px;
+				color:white;
+				font-size: 20px;
+				border-radius:8px ;
+				margin-top: 40px;
+			}
+			#ppp20{cursor: pointer;
+				background: mediumslateblue;
+				width: 480px;
+				height: 60px;
+				margin: 20px 0 0 60px;
+				text-align: center;
+				line-height: 60px;
+				color:white;
+				font-size: 20px;
+				border-radius:8px ;
+				margin-top: 40px;
+			}
+			#chec{
+				width: 15px;
+				height: 15px;
+				margin-left: 60px;
+				margin-top: 30px;
+			}
+			#chec1{
+				margin-left: 60px;
+				margin-top: 30px;
+			}
+			#reme{
+				color:black;
+				font-size: 16px;
+			}
+			
+			
+			#xk0{
+				position: absolute;
+				top: 50px;
+				left: 20%;
+				font-size: 20px;
+				z-index: 2;
+			}
+			#xk{background: white;
+				position: absolute;
+				top: 130px;
+				left: 20%;
+				
+			}
+			#xk2{background: white;
+				position: absolute;
+				top: 130px;
+				left: 20%;
+				display: none;
+				
+			}
+			#boss{
+				position: relative;
+				left: 150px;
+			}
+			#DDiv{
+				position: fixed;
+				z-index: 5;
+				background:rgba(0,0,0,0.5) ;
+				width: 100%;
+				top: 0;
+				height: 800px;
+				display: none;
+			}
+			#a{ color: black;
+			margin-left: 220px;
+			margin-top: 50px;
+			display: inline-block;
+				text-decoration: underline;
+    			text-decoration-line: underline;
+    			text-decoration-style: initial;
+   				 text-decoration-color: initial;
+   				 font-size: 14px;
+			}
+			#yz1{position: absolute;
+			width: 200px;
+				top: 8%;
+				left: 110%;
+				font-size: 14px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: black;
+				border: 2px solid greenyellow;
+				display: none;
+			}
+			#yz2{position: absolute;
+			width: 200px;
+				top: 27%;
+				left: 110%;
+				font-size: 14px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: black;
+				border: 2px solid greenyellow;
+				display: none;
+			}
+			#yz3{position: absolute;
+				width: 200px;
+				top: 11%;
+				left: 110%;
+				font-size: 14px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: black;
+				border: 2px solid greenyellow;
+				display: none;
+			}
+			#yz4{position: absolute;
+				width: 200px;
+				top: 30%;
+				left: 110%;
+				font-size: 14px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: black;
+				border: 2px solid greenyellow;
+				display: none;
+			}
+			#yz5{position: absolute;
+				width: 200px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: black;
+				border: 2px solid greenyellow;
+				top: 48%;
+				left: 110%;
+				font-size: 14px;
+				display: none;
+			}
+			#px{position: absolute;
+			right: 200px;
+			cursor: pointer;
+				transform: rotate(45deg);
+				font-size: 100px;
+				color: white;
+			}
+			
+			*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+}
+.clearfix{
+	content: '';
+	display: block;
+	clear: both;
+}
+			header{
+				width: 100%;
+				background: #181818;
+				height: 50px;
+			}
+			#kw1{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			#kw1 .kw1_one{
+				float: left;
+				margin: 0 20px;
+			}
+			#kw1 .kw1_two li{
+				float: left;
+				list-style: none;
+				margin:0 25px;
+				line-height: 50px;
+			}
+			#kw1 .kw1_two .kw1_three{
+				margin:0 10px;
+			}
+			#kw1 .kw1_two .kw1_four{
+				margin:0 12px;
+				position: relative;
+			}
+			#kw1 .kw1_two li a{
+				text-decoration: none;
+				color: white;
+				font: 18px "微软雅黑";
+			}
+			#kw1 .kw1_two .kw1_three a{
+				font: 14px "微软雅黑";
+				opacity: 0.5;
+			}
+			#kw1 .kw1_two .kw1_four a{
+				font: 14px "微软雅黑";
+			}
+			#kw1 .kw1_two .kw1_four ul{
+				position: absolute;
+				top: 50px;
+				left: auto;
+				margin-left: -30px;
+				display: none;
+				z-index: 10;
+			}
+			#kw1 .kw1_two .kw1_four ul li{
+				background: black;
+				opacity: 0.8;
+				list-style: none;
+				width: 120px;
+				height: 30px;
+				line-height: 20px;
+				padding: 0 5px;
+			}
+			#kw1 .kw1_two .kw1_four ul li a{
+				font: 10px "微软雅黑";
+				line-height: 20px;
+				opacity: 0.7;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li{
+				width: 150px;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven a{
+				font: 14px "微软雅黑";
+				line-height: 25px;
+			}
+			#kw1 .kw1_two .kw1_four:hover ul{
+				display: block;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover a{
+				opacity: 1;
+				color: orange;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_six li:hover a{
+				opacity: 1;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_six li:hover{
+				opacity: 1;
+			}
+			
+			#kw1 .kw1_five{
+				line-height: 50px;
+				float: right;
+				margin-right: 10px;
+				position: relative;
+			}
+			#kw1 .kw1_five input{
+				width: 180px;
+   				height: 20px;
+    			color: #999;
+			    padding-left: 10px;
+			    font-size: 12px;
+			    line-height: 20px;
+			    background: 0;
+				border-radius:20px;
+			}
+			#kw1 .kw1_five ul{
+				position: absolute;
+				top:50px;
+				left: auto;
+				margin-left: -20px;
+				z-index: 50;
+				list-style: none;
+			}
+			#kw1 .kw1_five ul li{
+				display: none;
+				width: 250px;
+				height: 20px;
+				background:rgba(0,0,0,0.7);
+				color: rgba(255,255,255,0.7);
+				opacity: 0.8;
+				line-height: 20px;
+				font: 14px "微软雅黑";
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			#kw1 .kw1_five ul li:hover{
+				background:rgba(0,0,0,1);
+				color: rgba(255,255,255,1);
+				opacity: 1;
+			}
+			
+			
+			
+			
+			
+			
+			
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #i1{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -135px -52px ;
+				vertical-align: top;
+				margin: 0 10px 0 5px;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #a1{
+				color: orange;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #a2{
+				color: orange;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #a3{
+				color: orange;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #a4{
+				color: orange;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #i2{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -188px -55px ;
+				vertical-align: middle;
+				margin: 0 10px 0 5px;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #i3{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -45px -52px ;
+				vertical-align: top;
+				margin: 0 10px 0 5px;
+			}
+			#kw1 .kw1_two .kw1_four .kw1_seven li:hover #i4{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -8px -52px ;
+				vertical-align: top;
+				margin: 0 10px 0 5px;
+			}
+			
+			
+			#i1{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -135px -10px ;
+				vertical-align: top;
+				margin: 0 10px 0 5px;
+			}
+			#i1{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -135px -10px ;
+				vertical-align: top;
+				margin: 0 10px 0 5px;
+			}
+			#i2{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -188px -12px ;
+				vertical-align: middle;
+				margin: 0 10px 0 5px;
+			}
+			#i3{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -45px -10px ;
+				vertical-align: top;
+				margin: 0 10px 0 5px;
+			}
+			#i4{width: 20px;
+				height: 20px;
+				display: inline-block;
+				background-image: url(img/loginIcon.png);
+				background-position: -8px -10px ;
+				vertical-align: top;
+				margin: 0 10px 0 5px;
+				
+			}
+			#l4{
+				display: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<header>
+			<div id="kw1">
+				<img src="img/logo.jpg" class="kw1_one"/>
+				<ul class="kw1_two">
+					<li><a href="Homepage.html">首页</a></li>
+					<li id="bandand"><a href="bangdan2.html" id="bandan">榜单</a></li>
+					<li><a href="#">歌手</a></li>
+					<li><a href="#">下载酷我客户端</a></li>
+					<li class="kw1_three"><a href="#">美女秀</a></li>
+					<li class="kw1_three"><a href="#">酷我音乐</a></li>
+					<li class="kw1_three"><a href="#">VIP会员</a></li>
+					<li class="kw1_three"><a href="#">i听</a></li>
+					<li class="kw1_four"><a href="#">更多服务</a>
+						<ul class="kw1_six">
+							<li><a href="#">腾讯音乐人</a></li>
+							<li><a href="#">专辑</a></li>
+							<li><a href="#">分类</a></li>
+							<li><a href="#">MV</a></li>
+							<li><a href="#">活动</a></li>
+							<li><a href="#">娱乐</a></li>
+							<li><a href="#">HiFi音乐</a></li>
+							<li><a href="#">主播电台</a></li>
+							<li><a href="#">酷我有一号</a></li>
+						</ul>
+					</li>
+					<li class="kw1_four"><a href="#" id="kw1_eight">登录&emsp;&and;</a>
+						<ul class="kw1_seven" >
+							<li id="l1"><i id="i1"></i><a href="#" ><span id="a1">酷我账号登录</span></a></li>
+							<li id="l2"><i id="i2"></i><a href="#" ><span id="a2">新浪微博登录</span></a></li>
+							<li id="l3"><i id="i3"></i><a href="#" ><span id="a3">QQ账号登录</span></a></li>
+							<li id="l4"><i id="i4"></i><a href="#" id="a4">退出</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="kw1_five">
+					<input placeholder="   找到好音乐" /><i></i>
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		
+		
+		
+		<div id="DDiv">
+			
+		<p id="px">+</p>
+		<div id="boss">
+			
+		
+		<div id="xk0">
+		<p id="ppp1">Sign&nbsp;&nbsp;in</p>
+		<p id="ppp22">New account</p>
+		<div class="cle"></div>
+		</div>	
+		
+		
+		<div id="xk">
+		<div id="xxk">
+			
+		<input class="inp" id="signin-email" type="email" placeholder="E-mail">
+		<p id="yz1"></p>
+		<input class="inp" id="pas" type="password" placeholder="Password" /><samp id="dls">|</samp><span id="dls2" >Hide</span>
+		<p id="yz2"></p>
+		<div>
+			<input id="chec"  type="checkbox" /><span id="reme"> Remember me</span>
+			<br />
+		</div>
+		<p id="ppp2">Login</p>
+			<a id="a" href="#0">Forgot your password?</a>
+		</div>
+		</div>
+		
+		
+		
+		<div id="xk2">
+		<div id="xxk2">
+			<p><input type="text" name="" id="use" value="" placeholder="Username" /></p>
+			<p id="yz3"></p>
+			<input class="inp" id="signin2-email" type="email" placeholder="E-mail">
+			<p id="yz4"></p>
+		<input class="inp" id="pas2" type="password" placeholder="Password"/><samp id="dlst">|</samp><span id="dls2t" >Hide</span>
+		<p id="yz5"></p>
+		<div>
+			<input id="chec1"  type="checkbox" /><span id="reme"> I agree to the Terms</span>
+		</div>
+		<p id="ppp20">Create account</p>
+		</div>
+		</div>
+		
+		</div>
+		</div>
+		
+		
+		
+		
+		<div id="kw2" class="clearfix">
+			<div id="kw2_left" class="clearfix">
+				<h2>同专辑其他人所唱</h2>
+				<!--<p id="zg">
+					<span>专辑 : <a href="#">等你下课</a></span>
+					<span>歌手 : <a href="#">周杰伦</a></span>
+					<span><img src="imgkw/shareIcon.jpg"/> <a href="#">分享</a></span>
+					<span><img src="imgkw/commentIcon.jpg"/> <a href="#kw3">评论</a></span>
+				</p>-->
+				<div id="left_c">
+					<div id="left_c_w">
+						<table id="tbody1">
+							<tr>
+								<td>歌曲</td>
+								<td>歌手</td>
+								<td>热度</td>
+								<td class="fenxiang">
+									<a href="#"><img src="xiangimg/bofang.png"/></a>
+									<a href="#"><img src="xiangimg/jia.png"/></a>
+									<a href="#"><img src="xiangimg/xiazai.png"/></a>
+									<a href="#">
+										<img src="xiangimg/fenxiang.png"/>
+										<span>
+											<img src="xiangimg/weibo.png"/>
+											<img src="xiangimg/kongjian.png"/>
+											<img src="xiangimg/boke.png"/>
+											<img src="xiangimg/dou.png"/>
+											<img src="xiangimg/ren.png"/>
+										</span>
+									</a>
+								</td>
+							</tr>
+							<tbody id="tbody1">
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			
+			</div>
+			<div id="kw2_right">
+				<p>
+					<img src="imgkw/splice.png"/>
+					<img src="imgkw/3914752958.jpg" id="imgs"/>
+				</p>
+				<h3>专辑简介</h3>
+				<div id="jianjie">
+					此专辑没有简介
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="kw3" class="clearfix">
+			<div id="kw3_left">
+				<p><span>评论</span><span>3509条评论</span></p>
+				<p>
+					<img src="imgkw/def60.jpg"/>
+					<textarea></textarea>
+				</p>
+				<p>
+					<img src="imgkw/icon55.png"/>
+					<span><a href="#" class="as">评论</a></span>
+				</p>
+			</div>
+			<div id="kw3_lefts" class="clearfix">
+				<h2>精彩评论</h2>
+				<div class="clearfix">
+					<img src="imgkw/1508288315684_194273503s.jpg"/>
+					<p>
+						<span><a href="#">Gunner</a><a href="#" class="jubao">举报</a><a href="#">分享</a></span>
+						<span>
+							杰伦早已意识到风光不再了，所以他一遍遍的问你们耳机听什么，能不能告诉我？ 他一遍遍的说我写给你们的情书，现在还在写着，不正是他的一首首音乐吗。都什么年代了，结婚生子了，却还在写着这种幼稚的歌词。 后期的专辑唱的这么走心，却走不进你们心里，但还是在人来人往中，找寻着你们的喜好，给你们写着一封封情书。直到他唱了告白气球，你们才回了头。 也许 他不该在你们的世界，给了你们太高太多的期待。 杰伦早就累了，早就想退出歌坛了，要不是为了歌迷，才不写歌了。 总有一天总有一年我们会发现，他一直默默陪在我们身边。全世界最好的❤
+						</span>
+						<span>
+							<a>2018-01-18&ensp;04:44:27</a>
+							<a href="#">3636 <img src="imgkw/bg2.jpg"/><img src="imgkw/heizan.png"/></a>
+							<a href="#">回复</a>
+						</span>
+					</p>
+				</div>
+				<div class="clearfix">
+					<img src="imgkw/1508288315684_194273503s.jpg"/>
+					<p>
+						<span><a href="#">Gunner</a><a href="#" class="jubao">举报</a><a href="#">分享</a></span>
+						<span>
+							杰伦早已意识到风光不再了，所以他一遍遍的问你们耳机听什么，能不能告诉我？ 他一遍遍的说我写给你们的情书，现在还在写着，不正是他的一首首音乐吗。都什么年代了，结婚生子了，却还在写着这种幼稚的歌词。 后期的专辑唱的这么走心，却走不进你们心里，但还是在人来人往中，找寻着你们的喜好，给你们写着一封封情书。直到他唱了告白气球，你们才回了头。 也许 他不该在你们的世界，给了你们太高太多的期待。 杰伦早就累了，早就想退出歌坛了，要不是为了歌迷，才不写歌了。 总有一天总有一年我们会发现，他一直默默陪在我们身边。全世界最好的❤
+						</span>
+						<span>
+							<a>2018-01-18&ensp;04:44:27</a>
+							<a href="#">3636 <img src="imgkw/bg2.jpg"/><img src="imgkw/heizan.png"/></a>
+							<a href="#">回复</a>
+						</span>
+					</p>
+				</div>
+				<div class="clearfix">
+					<img src="imgkw/1508288315684_194273503s.jpg"/>
+					<p>
+						<span><a href="#">Gunner</a><a href="#" class="jubao">举报</a><a href="#">分享</a></span>
+						<span>
+							杰伦早已意识到风光不再了，所以他一遍遍的问你们耳机听什么，能不能告诉我？ 他一遍遍的说我写给你们的情书，现在还在写着，不正是他的一首首音乐吗。都什么年代了，结婚生子了，却还在写着这种幼稚的歌词。 后期的专辑唱的这么走心，却走不进你们心里，但还是在人来人往中，找寻着你们的喜好，给你们写着一封封情书。直到他唱了告白气球，你们才回了头。 也许 他不该在你们的世界，给了你们太高太多的期待。 杰伦早就累了，早就想退出歌坛了，要不是为了歌迷，才不写歌了。 总有一天总有一年我们会发现，他一直默默陪在我们身边。全世界最好的❤
+						</span>
+						<span>
+							<a>2018-01-18&ensp;04:44:27</a>
+							<a href="#">3636 <img src="imgkw/bg2.jpg"/><img src="imgkw/heizan.png"/></a>
+							<a href="#">回复</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

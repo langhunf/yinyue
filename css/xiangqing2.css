@@ -1,0 +1,376 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.clearfix{
+	content: '';
+	display: block;
+	clear: both;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+#kw2{
+	width: 1200px;
+	margin: 50px auto 0 auto;
+}
+
+#kw2_left{
+	width: 760px;
+	float: left;
+}
+#kw2_left h2{
+	font-size: 24px;
+	color: #333;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+#zg{
+	padding: 15px 0 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #CCCCCC;
+}
+#zg span{
+	margin: 5px;
+	font: 14px "微软雅黑";
+	color: #666;
+}
+#zg span a:nth-of-type(1){
+	margin-left: 3px;
+	color: #cd9800;
+}
+#zg span img{
+	vertical-align: middle;
+}
+
+
+/*歌词*/
+#left_c{
+	float: left;
+	width: 760px;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 12px;
+}
+#left_c_w{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 8px 0;
+}
+#left_c_w table{
+	width: 100%;
+}
+#left_c_w table tr{
+	width: 100%;
+	display: inline-block;
+	padding: 8px 0;
+}
+#tbody1 tr:nth-child(odd){
+	background: #F2F2F2;
+}
+
+
+
+#left_c_w table tbody tr td{
+	font: 16px "微软雅黑";
+}
+#left_c_w table tr td:nth-of-type(1){
+	width: 200px;
+	font: 14px "微软雅黑";
+}
+#left_c_w table tr td:nth-of-type(2){
+	font: 14px "微软雅黑";
+	width: 200px;
+}
+#left_c_w table  tr td:nth-of-type(3){
+	
+	width: 200px;
+}
+#left_c_w table  tr td:nth-of-type(3) progress{
+	height: 5px;
+    background-color:#CCCCCC;
+    border: transparent;
+}
+progress::-moz-progress-bar { background: #CCCCCC; }
+progress::-webkit-progress-bar { background: #CCCCCC; }
+progress::-moz-progress-bar { background: orange; }
+progress::-webkit-progress-value  { background: orange;}
+
+#left_c_w table tr td:nth-of-type(4){
+	width: 200px;
+}
+
+#left_c_w table tr td:nth-of-type(4) a{
+	height: 14px;
+	margin-right: 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+#left_c_w table tr td:nth-of-type(4) a:nth-of-type(4) img{
+	width: 13px;
+}
+#left_c_w table tr td:nth-of-type(4) a:nth-of-type(4){
+	position: relative;
+}
+#left_c_w table tr td:nth-of-type(4) a:nth-of-type(4) span img{
+	width: 16px;
+	margin-right: 4px;
+}
+#left_c_w table tr td:nth-of-type(4) a:nth-of-type(4) span{
+	width: 160px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	top: 3px;
+	right: 0;
+	display: none;
+}
+#left_c_w table tr td:nth-of-type(4) a:hover:nth-of-type(4) span{
+	display: block;
+}
+#left_c_w table tr td:nth-of-type(4) a:nth-of-type(4) span img:hover{
+	position: relative;
+	top: -17.5px;
+}
+
+
+
+
+#right_g{
+	float: right;
+	width: 6px;
+	height: 450px;
+	border-radius: 10px;
+	position: relative;
+	margin-top: 12px;
+}
+#right_g span{
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	background: #CCCCCC;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+}
+
+
+
+#kw2_right{
+	width: 410px;
+	float: right;
+	margin: 0 auto;
+}
+#kw2_right p{
+	margin: 0 auto;
+}
+#kw2_right p:nth-of-type(1){
+	width: 290px;
+	height: 290px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 80px;
+}
+#kw2_right p:nth-of-type(1) img:nth-of-type(1){
+	width: 290px;
+	height: 290px;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+}
+#kw2_right p:nth-of-type(1) img:nth-of-type(2){
+	width: 290px;
+	height: 290px;
+	z-index: 1;
+	position: absolute;
+	cursor: pointer;
+}
+#kw2_right h3{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	color: #808080;
+	margin-left: 10px;
+	border-bottom: 1px dashed #CCCCCC;
+	
+}
+#jianjie{
+	text-align: center;
+	width: 100%;
+	margin: 10px;
+	font: 14px "微软雅黑";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#kw3{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+#kw3_left{
+	width: 760px;
+}
+
+#kw3_left p:nth-of-type(1){
+	padding: 5px 0;
+	border-bottom: 1px solid #CCCCCC;
+}
+#kw3_left p:nth-of-type(1) span:nth-of-type(1){
+	font: 16px "微软雅黑";
+	color: black;
+}
+#kw3_left p:nth-of-type(1) span:nth-of-type(2){
+	font: 12px "微软雅黑";
+	color: black;
+	margin-left: 10px;
+}
+#kw3_left p:nth-of-type(2){
+	margin-top: 10px;
+}
+#kw3_left p:nth-of-type(2) img{
+	vertical-align: top;
+	width: 60px;
+	height: 60px;
+}
+#kw3_left p:nth-of-type(2) textarea{
+	margin-left: 13px;
+	border: 1px solid #CCCCCC;
+	width: 680px;
+	height: 160px;
+	resize:none;
+	outline: none;
+	font: 14px "微软雅黑";
+}
+#kw3_left p:nth-of-type(3){
+	width: 680px;
+	height: 25px;
+	margin-left: 78px;
+}
+#kw3_left p:nth-of-type(3) img{
+	vertical-align: bottom;
+}
+#kw3_left p:nth-of-type(3) span{
+	float: right;
+	font: 12px "微软雅黑";
+	vertical-align: bottom;
+}
+#kw3_left p:nth-of-type(3) span a{
+	font: 16px/26px "微软雅黑";
+	display: inline-block;
+	width: 80px;
+	height: 26px;
+	background: orange;
+	text-align: center;
+	margin-left: 20px;
+	color: white;
+	border-radius: 5px;
+}
+
+
+#kw3_lefts{
+	float: left;
+	width: 760px;
+	margin-top: 20px;
+}
+#kw3_lefts h2{
+	font: 16px "微软雅黑";
+	color: black;
+	font-weight: 400;
+	padding: 5px 0;
+	border-bottom: 1px solid #CCCCCC;
+}
+#kw3_lefts div{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #CCCCCC;
+}
+#kw3_lefts div img{
+	vertical-align: top;
+	width: 60px;
+	height: 60px;
+	margin-top: 4px;
+}
+#kw3_lefts div p:nth-of-type(1) {
+	display: inline-block;
+	margin-left: 13px;
+	width: 680px;
+	height: 160px;
+	font: 14px "微软雅黑";
+}
+#kw3_lefts div p span{
+	display: inline-block;
+	width: 100%;
+}
+#kw3_lefts div p span:nth-of-type(1) a:nth-of-type(1){
+	color: orange;
+}
+#kw3_lefts div:hover .jubao{
+	opacity: 1;
+}
+.jubao{
+	margin-left: 560px;
+	color: black;
+	opacity: 0;
+}
+#kw3_lefts div p span:nth-of-type(1) a:nth-of-type(3){
+	float: right;
+	color: black;
+}
+#kw3_lefts div p span:nth-of-type(2){
+	margin-top: 15px;
+}
+#kw3_lefts div p span:nth-of-type(3){
+	margin-top: 15px;
+}
+#kw3_lefts div p span:nth-of-type(3) a:nth-of-type(1){
+	font: 12px "微软雅黑";
+}
+#kw3_lefts div p span:nth-of-type(3) a:nth-of-type(2){
+	margin-left: 448px;
+	font: 12px "微软雅黑";
+	padding-right: 25px;
+	position: relative;
+}
+#kw3_lefts div p span:nth-of-type(3) a:nth-of-type(3){
+	margin-left: 20px;
+	font: 14px "微软雅黑";
+}
+#kw3_lefts div p span:nth-of-type(3) a:nth-of-type(2) img{
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	position: absolute;
+	left: 40px;
+	bottom: 2px;
+}
+#kw3_lefts div p span:nth-of-type(3) a:nth-of-type(2) img:nth-of-type(2){
+	opacity: 0;
+}
+#kw3_lefts div p span:nth-of-type(3) a:hover:nth-of-type(2) img:nth-of-type(2){
+	opacity: 1;
+}
+
+
+
+
+
